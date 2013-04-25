@@ -60,6 +60,8 @@ class LoggableMongoCollection extends \MongoCollection
     /**
      * batchInsert.
      */
+    /* FIXME: 1.2 and 1.3 versions of the php mongo driver differ
+
     public function batchInsert(array $a, array $options = array())
     {
         $this->time->start();
@@ -67,15 +69,16 @@ class LoggableMongoCollection extends \MongoCollection
         $time = $this->time->stop();
 
         $this->log(array(
-            'type'    => 'batchInsert',
-            'nb'      => count($a),
-            'data'    => $a,
+            'type' => 'batchInsert',
+            'nb' => count($a),
+            'data' => $a,
             'options' => $options,
-            'time'    => $time,
+            'time' => $time,
         ));
 
         return $return;
     }
+    */
 
     /**
      * count.
