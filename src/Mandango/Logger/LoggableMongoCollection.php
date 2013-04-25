@@ -60,7 +60,7 @@ class LoggableMongoCollection extends \MongoCollection
     /**
      * batchInsert.
      */
-    /* FIXME: 1.2 and 1.3 versions of the php mongo driver differ
+    /* FIXME: 1.2 and 1.3 versions of the php mongo driver differ from this
 
     public function batchInsert(array $a, array $options = array())
     {
